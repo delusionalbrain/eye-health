@@ -1,0 +1,17 @@
+{
+  "name": "eye-health",
+  "productName": "Eye-health",
+  "version": "1.0.0",
+  "description": "app to help with eye relaxation",
+  "license": "ISC",
+  "author": "gunnika",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^42.3.3",
+    "toastify-js": "^1.12.0"
+  }
+}

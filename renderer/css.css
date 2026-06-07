@@ -1,0 +1,22 @@
+
+body {
+    background-color: white;
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.5) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.5) 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
+#honey {
+    position: absolute;
+    width: 100px;
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+#honey:hover{
+    cursor: pointer;
+}
