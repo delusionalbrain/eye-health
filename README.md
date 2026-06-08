@@ -1,4 +1,4 @@
-# EyeEase
+# Eyease
 
 A minimal desktop app that reminds you to take eye breaks every 20 minutes — built with Electron.
 
@@ -7,7 +7,7 @@ A minimal desktop app that reminds you to take eye breaks every 20 minutes — b
 ## The 20-20-20 Rule
 
 Every **20 minutes**, look at something **20 feet away** for **20 seconds**.  
-That's it. EyeEase just makes sure you don't forget.
+That's it. Eyease just makes sure you don't forget.
 
 ---
 
