@@ -29,7 +29,7 @@ That's it. EyeEase just makes sure you don't forget.
 ### Installation
 
 ```bash
-git clone https://github.com/your-username/eyeease.git
+git clone https://github.com/delusionalbrain/eyeease.git
 cd eyeease
 npm install
 ```

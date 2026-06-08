@@ -9,7 +9,7 @@ const isDev = process.env.NODE_ENV != 'development';
 
 function createMainWindow() {
     const mainWindow = new BrowserWindow({
-        title: "eye health",
+        title: "EYEASE",
         width: 300,
         //width: isDev ? 1000 : 500,
         resizable: false,
