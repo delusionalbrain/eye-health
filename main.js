@@ -10,14 +10,16 @@ const isDev = process.env.NODE_ENV != 'development';
 function createMainWindow() {
     const mainWindow = new BrowserWindow({
         title: "eye health",
-        width: isDev ? 1000 : 500,
-        height: 600
+        width: 300,
+        //width: isDev ? 1000 : 500,
+        resizable: false,
+        height: 300
     });
 
     //open devtools if in dev environment
-    if (isDev) {
-        mainWindow.webContents.openDevTools();
-    }
+    // if (isDev) {
+    //     mainWindow.webContents.openDevTools();
+    // }
 
     mainWindow.loadFile(path.join(__dirname, './renderer/index.html'));
 
@@ -34,7 +36,7 @@ function showNotification () {
 function startCycle() {
     setInterval(function () {
         showNotification();
-    }, 120000);
+    }, 1200000);
 }
 
 app.whenReady().then(createMainWindow).then(startCycle);

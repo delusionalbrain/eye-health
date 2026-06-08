@@ -2,8 +2,8 @@
 body {
     background-color: black;
     background-image: 
-        linear-gradient(rgba(207, 16, 16, 0.5) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(228, 10, 10, 0.5) 1px, transparent 1px);
+        linear-gradient(rgba(207, 16, 16, 0.2) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(228, 10, 10, 0.2) 1px, transparent 1px);
     background-size: 30px 30px;
 }
 
@@ -19,4 +19,40 @@ body {
 
 #honey:hover{
     cursor: pointer;
+}
+
+.styled-text {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    writing-mode: vertical-rl;
+    border: 3px solid black;
+    background-color: rgba(207, 16, 16);
+    font-family: "Oi", serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box {
+    border: 3px solid rgba(207, 16, 16);
+    color: rgba(207, 16, 16);
+}
+
+.style-box {
+    padding: 10px 15px;
+    margin: 0;
+    letter-spacing: 2px;   
+    border-bottom: 1px solid rgba(207, 16, 16); 
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.style-box:last-child {
+    border-bottom: none;
 }
