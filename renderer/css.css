@@ -1,9 +1,9 @@
 
 body {
-    background-color: white;
+    background-color: black;
     background-image: 
-        linear-gradient(rgba(0,0,0,0.5) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0,0,0,0.5) 1px, transparent 1px);
+        linear-gradient(rgba(207, 16, 16, 0.5) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(228, 10, 10, 0.5) 1px, transparent 1px);
     background-size: 30px 30px;
 }
 

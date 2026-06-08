@@ -1,6 +1,6 @@
 // main process - backend , renderer for frontend
 const path = require('path');
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow , Notification} = require('electron');
 
 const isMac = process.platform === 'darwin';
 const isDev = process.env.NODE_ENV != 'development';
@@ -23,14 +23,26 @@ function createMainWindow() {
 
 }
 
-app.whenReady().then(() => {
-    createMainWindow();
 
-    app.on('activate', () => {
-        if (BrowserWindow.getAllWindows().length === 0) {
-        createMainWindow()
-        }
-    })
+const NOTIFICATION_TITLE = 'Relax'
+const NOTIFICATION_BODY = 'Relax your eyes for 20 seconds until the next notification or open the app!'
+
+function showNotification () {
+  new Notification({ title: NOTIFICATION_TITLE, body: NOTIFICATION_BODY }).show()
+}
+
+function startCycle() {
+    setInterval(function () {
+        showNotification();
+    }, 120000);
+}
+
+app.whenReady().then(createMainWindow).then(startCycle);
+
+app.on('activate', () => {
+  if (BrowserWindow.getAllWindows().length === 0) {
+      createMainWindow();
+  }
 })
 
 app.on('window-all-closed', () => {
